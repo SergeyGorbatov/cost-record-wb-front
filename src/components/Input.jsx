@@ -42,7 +42,6 @@ const StyledLabel = styled.label`
 `;
 
 const InputWithLabel = ({ label, type, name, value, onChange }) => {
-
   return (
     <InputContainer>
       <StyledInput

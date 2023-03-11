@@ -2,6 +2,20 @@ import styled, { keyframes } from "styled-components";
 import DataTable from "react-data-table-component";
 import { useEffect, useState } from "react";
 
+const customStyles = {
+  subHeader: {
+    style: {
+      backgroundColor: "#c9c9c9",
+    },
+  },
+  headCells: {
+    style: {
+      backgroundColor: "#c9c9c9",
+      fontSize: "15px",
+    },
+  },
+};
+
 const Container = styled.div`
   width: 100%;
 `;
@@ -77,7 +91,7 @@ const CustomLoader = ({ rows }) => {
 
   return (
     <Container>
-      <DataTable columns={columns} data={rowsCount} />
+      <DataTable columns={columns} data={rowsCount} customStyles={customStyles}/>
     </Container>
   );
 };
